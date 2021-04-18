@@ -39,4 +39,5 @@ jobs:
           --human-readable \
           --filter='P uploads' \
           --exclude wp/wp-content/uploads \
+          --exclude wp/wp-content/themes/lawnlab/node_modules \
           ./wp/wp-content/ ${{env.dest}}
