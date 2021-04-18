@@ -1,5 +1,7 @@
 <?php
 
+add_filter('show_admin_bar', '__return_false');
+
 add_filter('acf/settings/load_json', function($path) {
 	return get_stylesheet_directory() . '/acf';
 });

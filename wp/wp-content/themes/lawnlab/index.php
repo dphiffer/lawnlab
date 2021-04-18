@@ -5,8 +5,16 @@ get_header();
 if (have_posts()) {
 	while (have_posts()) {
 		the_post();
-		the_title('<h2>', '</h2>');
-		the_content();
+		if (is_front_page()) {
+			get_template_part('home', 'intro');
+		}
+		?>
+		<div class="container">
+			<div id="content" class="main">
+				<?php the_content(); ?>
+			</div>
+		</div>
+		<?php
 	}
 }
 

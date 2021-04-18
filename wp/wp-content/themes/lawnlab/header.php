@@ -6,6 +6,4 @@
 		<link rel="stylesheet" href="<?php asset_url('dist/main.css'); ?>">
 		<?php wp_head(); ?>
 	</head>
-	<body>
-		<div class="container">
-			<div id="content" class="main">
+	<body <?php body_class(); ?>>
