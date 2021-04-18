@@ -1,0 +1,54 @@
+* {
+	font-variant-ligatures: none;
+}
+
+$s-xxs: 14px;
+$s-xs: 16px;
+$s-sm: 20px;
+$s-md: 28px;
+$s-lg: 36px;
+$s-xl: 48px;
+
+h1, h2, h3, h4, h5 {
+	font-family: $f-open-sans;
+	font-weight: 600;
+	line-height: 1.1em;
+	padding: 1em 0 0.5em 0;
+}
+
+h1 {
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	&:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+}

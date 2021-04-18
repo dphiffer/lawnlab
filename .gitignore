@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+/wp/wp-content/plugins/index.php
+/wp/wp-content/plugins/akismet/
+/wp/wp-content/plugins/hello.php
+/wp/wp-content/themes/index.php
+/wp/wp-content/themes/twentynineteen/
+/wp/wp-content/themes/twentytwenty/
+/wp/wp-content/themes/twentytwentyone/
+/wp/wp-content/themes/lawnlab/dist/
+/wp/wp-content/uploads/
