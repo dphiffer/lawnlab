@@ -6,14 +6,6 @@ body {
 	background: $c-bg;
 }
 
-.hidden {
-	display: none;
-}
-
-.clear {
-	clear: both;
-}
-
 p {
 	padding: 0 0 20px 0;
 	margin: 0;
@@ -34,5 +26,27 @@ a {
 	&:hover {
 		color: $c-text;
 		background-color: $c-light;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.breadcrumbs {
+	border-top: 3px solid $c-dark;
+	position: relative;
+	z-index: 1;
+	font-size: $s-xxs;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 16px;
+
+	a {
+		text-decoration: none;
 	}
 }

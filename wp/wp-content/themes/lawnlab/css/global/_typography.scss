@@ -2,7 +2,7 @@
 	font-variant-ligatures: none;
 }
 
-$s-xxs: 14px;
+$s-xxs: 13px;
 $s-xs: 16px;
 $s-sm: 20px;
 $s-md: 28px;
@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5 {
 	font-family: $f-open-sans;
 	font-weight: 600;
 	line-height: 1.1em;
-	padding: 1em 0 0.5em 0;
 }
 
 h1 {
@@ -21,11 +20,13 @@ h1 {
 }
 
 h2 {
+	font-weight: 900;
 	font-size: 1.8em;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-weight: lighter;
+	font-size: 1.8em;
 }
 
 h4 {
