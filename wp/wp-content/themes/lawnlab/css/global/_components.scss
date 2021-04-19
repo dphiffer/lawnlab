@@ -24,14 +24,27 @@ a {
 	display: none;
 }
 
-.alignright {
-	float: right;
-	margin: 0 0 16px 16px;
+img {
+	width: 100%;
+	height: auto;
+	margin-top: 16px;
 }
 
-.alignleft {
-	float: left;
-	margin: 0 16px 16px;
+@include breakpoint(md) {
+
+	.alignright {
+		width: 40%;
+		max-width: 400px;
+		float: right;
+		margin: 0 0 16px 16px;
+	}
+
+	.alignleft {
+		width: 40%;
+		max-width: 400px;
+		float: left;
+		margin: 0 16px 16px;
+	}
 }
 
 .clear {

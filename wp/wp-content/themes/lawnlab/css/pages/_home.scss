@@ -37,6 +37,7 @@ body.home {
 	}
 
 	.locations {
+		border-top: 3px solid $c-dark;
 		position: relative;
 		z-index: 1;
 		background: $c-bg;
@@ -46,6 +47,13 @@ body.home {
 		padding: 32px 0;
 		background-size: cover;
 		background-attachment: fixed;
+		cursor: pointer;
+		background-blend-mode: multiply;
+		transition: 0.3s all ease-out;
+
+		&:hover {
+			background-color: $c-dark;
+		}
 
 		h3 {
 			font-weight: 900;
@@ -66,10 +74,12 @@ body.home {
 		position: relative;
 		z-index: 1;
 		background-color: $c-bg;
-		padding: 32px 0;
+		padding: 40px 0 20px 0;
+		border-top: 3px solid $c-dark;
 	}
 
 	.media {
+		border-top: 3px solid $c-light;
 		position: relative;
 		z-index: 1;
 		color: $c-bg;
