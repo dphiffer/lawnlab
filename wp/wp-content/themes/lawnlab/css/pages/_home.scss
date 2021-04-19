@@ -86,7 +86,7 @@ body.home {
 		.locations__content {
 			float: right;
 			max-width: 700px;
-			background: rgba(255, 255, 255, 0.8);
+			background: $c-light;
 			padding: 16px;
 
 			@include breakpoint(md) {
