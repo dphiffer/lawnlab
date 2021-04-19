@@ -34,6 +34,10 @@ img {
 	margin-top: 16px;
 }
 
+figcaption {
+	font-size: $s-xs;
+}
+
 @include breakpoint(md) {
 
 	.alignright {

@@ -31,7 +31,10 @@ add_filter('acf/settings/save_json', function($path) {
 add_action('after_setup_theme', function() {
 	add_theme_support('post-thumbnails');
 	add_theme_support('title-tag');
+	add_theme_support('html5', ['search-form', 'gallery', 'caption', 'style', 'script']);
 });
+
+add_filter('img_caption_shortcode_width', '__return_false');
 
 function image_url($id, $size = 'large') {
 	list($url) = wp_get_attachment_image_src($id, $size);
