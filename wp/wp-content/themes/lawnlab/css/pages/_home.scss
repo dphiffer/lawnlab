@@ -50,8 +50,10 @@ body.home {
 		transition: 0.3s all ease-out;
 		max-height: none;
 
-		.locations__title {
-			float: left;
+		@include breakpoint(md) {
+			.locations__title {
+				float: left;
+			}
 		}
 
 		h3 {
@@ -84,13 +86,15 @@ body.home {
 		}
 
 		.locations__content {
-			float: right;
 			max-width: 700px;
-			background: $c-light;
+			background: $c-bg;
 			padding: 16px;
+			margin-top: 64px;
 
 			@include breakpoint(md) {
+				float: right;
 				padding: 32px;
+				margin-top: 0;
 			}
 
 			img {

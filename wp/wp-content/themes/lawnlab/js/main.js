@@ -2,11 +2,14 @@
 
 	$(window).ready(function() {
 		$('.locations__item').click(function(e) {
-			$('.locations__item').addClass('collapsed');
 			$item = $(e.target);
 			if (! $item.hasClass('.locations__item')) {
 				$item = $item.closest('.locations__item');
 			}
+			if (! $item.hasClass('collapsed')) {
+				return;
+			}
+			$('.locations__item').addClass('collapsed');
 			$item.removeClass('collapsed');
 			window.location = '#' + $item.attr('id');
 		});
