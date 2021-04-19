@@ -1,13 +1,18 @@
-* {
-	font-variant-ligatures: none;
-}
-
 $s-xxs: 13px;
-$s-xs: 16px;
-$s-sm: 20px;
-$s-md: 28px;
-$s-lg: 36px;
-$s-xl: 48px;
+$s-xs: 14px;
+$s-sm: 18px;
+$s-md: 24px;
+$s-lg: 30px;
+$s-xl: 36px;
+
+body {
+	font-family: $f-open-sans;
+	font-weight: normal;
+	font-size: $s-sm;
+	line-height: 1.75;
+	color: $c-text;
+	background: $c-bg;
+}
 
 h1, h2, h3, h4, h5 {
 	font-family: $f-open-sans;

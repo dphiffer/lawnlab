@@ -54,3 +54,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+* {
+	font-variant-ligatures: none;
+}

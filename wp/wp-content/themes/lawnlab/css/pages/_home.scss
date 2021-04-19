@@ -35,4 +35,45 @@ body.home {
 			}
 		}
 	}
+
+	.locations {
+		position: relative;
+		z-index: 1;
+		background: $c-bg;
+	}
+
+	.locations__item {
+		padding: 32px 0;
+		background-size: cover;
+		background-attachment: fixed;
+
+		h3 {
+			font-weight: 900;
+			color: $c-bg;
+			text-shadow: 2px 2px 2px $c-text;
+		}
+
+		.dates {
+			color: $c-light;
+			font-size: $s-xxs;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			text-shadow: 2px 2px 2px $c-text;
+		}
+	}
+
+	.about {
+		position: relative;
+		z-index: 1;
+		background-color: $c-bg;
+		padding: 32px 0;
+	}
+
+	.media {
+		position: relative;
+		z-index: 1;
+		color: $c-bg;
+		background-color: $c-darkgray;
+		padding: 32px 0;
+	}
 }
