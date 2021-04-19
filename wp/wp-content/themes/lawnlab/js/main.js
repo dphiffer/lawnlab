@@ -18,6 +18,11 @@
 			$(hash[0]).removeClass('collapsed');
 			$(hash[0])[0].scrollIntoView();
 		}
+
+		$('.locations__close').click(function(e) {
+			$('.locations__item').addClass('collapsed');
+			e.stopPropagation();
+		});
 	});
 
 })(jQuery);

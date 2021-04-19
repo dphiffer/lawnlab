@@ -4,7 +4,7 @@ if (! function_exists('get_field')) {
 	return;
 }
 
-echo '<div class="locations">';
+echo '<div id="locations" class="locations">';
 
 $locations = get_field('home_locations', 'options');
 foreach ($locations as $location) {
@@ -18,6 +18,7 @@ foreach ($locations as $location) {
 			</div>
 			<div class="locations__content">
 				<?php echo $location['content']; ?>
+				<a href="#locations" class="locations__close">&times;</a>
 			</div>
 			<br class="clear">
 		</div>
