@@ -53,6 +53,7 @@ body.home {
 		@include breakpoint(md) {
 			.locations__title {
 				float: left;
+				width: 240px;
 			}
 		}
 
@@ -92,7 +93,7 @@ body.home {
 			margin-top: 64px;
 
 			@include breakpoint(md) {
-				float: right;
+				float: left;
 				padding: 32px;
 				margin-top: 0;
 			}
@@ -123,5 +124,28 @@ body.home {
 		color: $c-bg;
 		background-color: $c-darkgray;
 		padding: 32px 0;
+
+		@include breakpoint(md) {
+			&__title {
+				float: left;
+				width: 240px;
+			}
+		}
+
+		&__content {
+			max-width: 700px;
+			margin-top: 64px;
+
+			@include breakpoint(md) {
+				float: left;
+				margin-top: 0;
+				width: 700px;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 }

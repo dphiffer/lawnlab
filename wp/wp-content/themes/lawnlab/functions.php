@@ -36,6 +36,10 @@ add_action('after_setup_theme', function() {
 
 add_filter('img_caption_shortcode_width', '__return_false');
 
+add_filter('embed_oembed_html', function($html) {
+	return '<div class="iframe-container">' . $html . '</div>';
+});
+
 function image_url($id, $size = 'large') {
 	list($url) = wp_get_attachment_image_src($id, $size);
 	return $url;
