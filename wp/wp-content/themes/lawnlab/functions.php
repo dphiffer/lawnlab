@@ -2,6 +2,11 @@
 
 add_filter('show_admin_bar', '__return_false');
 
+add_action('wp_enqueue_scripts', function() {
+	list($src, $version) = get_asset_url('js/main.js', true);
+	wp_enqueue_script('main', $src, ['jquery'], $version, true);
+});
+
 add_action('acf/init', function() {
 	if (function_exists('acf_add_options_page')) {
 		acf_add_options_page([
